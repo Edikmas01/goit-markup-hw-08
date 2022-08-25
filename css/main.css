@@ -447,14 +447,25 @@ body {
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 25px;
+  line-height: 1.68;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 696px;
   margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    width: 696px;
+  }
 }
 
 .hero__btn {
@@ -466,7 +477,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  padding: 10px 32px;
+  padding: 10px 24px;
   min-width: 200px;
   margin-top: 40px;
   background: #2196f3;
@@ -558,6 +569,12 @@ body {
 
 .gallery {
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    display: contents;
+  }
 }
 
 .title {
@@ -609,7 +626,12 @@ body {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+  }
 }
 
 .card-list {
@@ -709,7 +731,12 @@ body {
 }
 
 .client__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .client__title {
+    margin-bottom: 50px;
+  }
 }
 
 .client-card__list {
