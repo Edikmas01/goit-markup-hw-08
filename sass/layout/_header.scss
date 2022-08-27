@@ -117,13 +117,13 @@
 }
 
 .menu-open {
+  display: none;
   margin-left: auto;
   background-color: #ffffff;
   border: 0;
   padding: 0;
-  display: flex;
 }
-
+//   display: flex;}
 ////////// mob /////////
 .mob-menu {
   position: fixed;

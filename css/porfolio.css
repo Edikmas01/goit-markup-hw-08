@@ -218,6 +218,7 @@ body {
 }
 
 .menu-open {
+  display: none;
   margin-left: auto;
   background-color: #ffffff;
   border: 0;
