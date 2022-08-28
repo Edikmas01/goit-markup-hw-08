@@ -223,7 +223,6 @@ body {
   background-color: #ffffff;
   border: 0;
   padding: 0;
-  display: flex;
 }
 
 .mob-menu {
@@ -242,6 +241,11 @@ body {
   height: 100%;
   justify-content: space-between;
   overflow: auto;
+}
+@media (max-width: 767px) {
+  .mob-menu .mob-menu {
+    display: none;
+  }
 }
 
 .mob-soc__list {

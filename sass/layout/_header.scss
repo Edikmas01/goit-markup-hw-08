@@ -141,6 +141,11 @@
     justify-content: space-between;
     overflow: auto;
   }
+  @media (max-width: 767px) {
+    .mob-menu {
+      display: none;
+    }
+  }
 }
 
 .mob-soc__list {
