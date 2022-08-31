@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <a href="" class="logo link">
           Web<span class="logo__span logo__span--color-dark">Studio</span></a
@@ -142,7 +142,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <div class="container">
@@ -212,6 +212,7 @@
             <li class="gallery__item">
               <img
                 src="./photo/picture2.jpg"
+                srcset="./photo/work/img1-2x.jpg 2x"
                 alt="написание кода"
                 width="370"
                 height="294"
@@ -221,6 +222,7 @@
             <li class="gallery__item">
               <img
                 src="./photo/picture3.jpg"
+                srcset="./photo/work/img2-2x.jpg 2x"
                 alt="Разработка мобильних приложений напиши"
                 width="370"
                 height="294"
@@ -230,6 +232,7 @@
             <li class="gallery__item">
               <img
                 src="./photo/picture4.jpg"
+                srcset="./photo/work/img3-2x.jpg 2x"
                 alt="креатив"
                 width="370"
                 height="294"
@@ -244,12 +247,29 @@
           <h2 class="title title">Наша команда</h2>
           <ul class="card-list list">
             <li class="card-list__item">
-              <img
-                src="./photo/picture5.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./photo/team/ihor.jpg 1x, ./photo/team/ihor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./photo/team/ihor-tablet.jpg    1x,
+                    ./photo/team/ihor-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./photo/team/ihor-mobile.jpg    1x,
+                    ./photo/team/ihor-mobile-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./photo/team/ihor-mobile.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="card-list__div">
                 <h3 class="card-list__name">Игорь Демьяненко</h3>
                 <p class="card-list__job">Product Designer</p>
@@ -293,12 +313,26 @@
             </li>
 
             <li class="card-list__item">
-              <img
-                src="./photo/picture6.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./photo/team/olga.jpg 1x, ./photo/team/olga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./photo/team/olga-tablet.jpg    1x,
+                    ./photo/team/olga-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./photo/team/olga-mobile.jpg    1x,
+                    ./photo/team/olga-mobile-2x.jpg 2x
+                  "
+                />
+                <img src="./photo/team/olga-mobile.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="card-list__div">
                 <h3 class="card-list__name">Ольга Репина</h3>
                 <p class="card-list__job">Frontend Developer</p>
@@ -341,12 +375,26 @@
               </div>
             </li>
             <li class="card-list__item">
-              <img
-                src="./photo/picture7.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./photo/team/nik.jpg 1x, ./photo/team/nik-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./photo/team/nik-tablet.jpg    1x,
+                    ./photo/team/nik-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./photo/team/nik-mobile.jpg    1x,
+                    ./photo/team/nik-mobile-2x.jpg 2x
+                  "
+                />
+                <img src="./photo/team/nik-mobile.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="card-list__div">
                 <h3 class="card-list__name">Николай Тарасов</h3>
                 <p class="card-list__job">Marketing</p>
@@ -389,12 +437,26 @@
               </div>
             </li>
             <li class="card-list__item">
-              <img
-                src="./photo/picture8.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./photo/team/mich.jpg 1x, ./photo/team/mich-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./photo/team/mich-tablet.jpg    1x,
+                    ./photo/team/mich-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./photo/team/mich-mobile.jpg    1x,
+                    ./photo/team/mich-mobile-2x.jpg 2x
+                  "
+                />
+                <img src="./photo/team/mich-mobile.jpg" alt="Николай Тарасов" />
+              </picture>
               <div class="card-list__div">
                 <h3 class="card-list__name">Михаил Ермаков</h3>
                 <p class="card-list__job">UI Designer</p>
@@ -490,7 +552,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="contact-war">
         <div class="container">
           <section>
@@ -583,7 +645,7 @@
           </section>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="beckdrop is-hidden" data-modal>
       <div class="modal">
@@ -654,7 +716,7 @@
               value="true"
             />
             <label for="agree" id="agree" class="chec-text">
-              <span>
+              <span class="chec-icon-wrap">
                 <svg class="chec-icon" width="11" height="8">
                   <use href="./photo/symbol-defs.svg#icon-checkmark"></use>
                 </svg>

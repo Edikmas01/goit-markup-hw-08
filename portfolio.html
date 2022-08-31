@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/porfolio.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <a href="" class="logo link">
           Web<span class="logo__span logo__span--color-dark">Studio</span></a
@@ -140,7 +140,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="section">
         <div class="container">
@@ -165,12 +165,32 @@
             <ul class="projects__list list">
               <li class="projects__item">
                 <div class="projects__wrap">
-                  <img
-                    src="./photo/photo1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./photo/portfolio/1tehnokriak.jpg    1x,
+                        ./photo/portfolio/1tehnokriak-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/1tehnokriak-tablet.jpg    1x,
+                        ./photo/portfolio/1tehnokriak-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/1tehnokriak-mobile.jpg    1x,
+                        ./photo/portfolio/1tehnokriak-mobile-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./photo/portfolio/1tehnokriak-mobile.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="projects__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -184,12 +204,32 @@
               </li>
               <li class="projects__item">
                 <div class="projects__wrap">
-                  <img
-                    src="./photo/photo2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./photo/portfolio/2poster.jpg    1x,
+                        ./photo/portfolio/2poster-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/2poster-tablet.jpg    1x,
+                        ./photo/portfolio/2poster-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/2poster-mobile.jpg    1x,
+                        ./photo/portfolio/2poster-mobile-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./photo/portfolio/2poster-mobile.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <p class="projects__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -205,12 +245,32 @@
               </li>
               <li class="projects__item">
                 <div class="projects__wrap">
-                  <img
-                    src="./photo/photo3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./photo/portfolio/3seafood.jpg    1x,
+                        ./photo/portfolio/3seafood-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/3seafood-tablet.jpg    1x,
+                        ./photo/portfolio/3seafood-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/3seafood-mobile.jpg    1x,
+                        ./photo/portfolio/3seafood-mobile-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./photo/portfolio/3seafood-mobile.jpg "
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
                   <p class="projects__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -224,12 +284,32 @@
               </li>
               <li class="projects__item">
                 <div class="projects__wrap">
-                  <img
-                    src="./photo/photo4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./photo/portfolio/4prime.jpg    1x,
+                        ./photo/portfolio/4prime-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/4prime-tablet.jpg    1x,
+                        ./photo/portfolio/4prime-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/4prime-mobile.jpg    1x,
+                        ./photo/portfolio/4prime-mobile-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./photo/portfolio/4prime-mobile.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
                   <p class="projects__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -243,12 +323,32 @@
               </li>
               <li class="projects__item">
                 <div class="projects__wrap">
-                  <img
-                    src="./photo/photo5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./photo/portfolio/5boxes.jpg    1x,
+                        ./photo/portfolio/5boxes-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/5boxes-tablet.jpg    1x,
+                        ./photo/portfolio/5boxes-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/5boxes-mobile.jpg    1x,
+                        ./photo/portfolio/5boxes-mobile-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./photo/portfolio/5boxes-mobile.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <p class="projects__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -262,12 +362,32 @@
               </li>
               <li class="projects__item">
                 <div class="projects__wrap">
-                  <img
-                    src="./photo/photo6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./photo/portfolio/6inspiration.jpg    1x,
+                        ./photo/portfolio/6inspiration-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/6inspiration-tablet.jpg    1x,
+                        ./photo/portfolio/6inspiration-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/6inspiration-mobile.jpg    1x,
+                        ./photo/portfolio/6inspiration-mobile-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./photo/portfolio/6inspiration-mobile.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <p class="projects__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -281,12 +401,32 @@
               </li>
               <li class="projects__item">
                 <div class="projects__wrap">
-                  <img
-                    src="./photo/photo7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./photo/portfolio/7limitededition.jpg    1x,
+                        ./photo/portfolio/7limitededition-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/7limitededition-tablet.jpg    1x,
+                        ./photo/portfolio/7limitededition-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/7limitededition-mobile.jpg    1x,
+                        ./photo/portfolio/7limitededition-mobile-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./photo/portfolio/7limitededition-mobile.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
                   <p class="projects__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -300,12 +440,32 @@
               </li>
               <li class="projects__item">
                 <div class="projects__wrap">
-                  <img
-                    src="./photo/photo8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./photo/portfolio/8lab.jpg    1x,
+                        ./photo/portfolio/8lab-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/8lab-tablet.jpg    1x,
+                        ./photo/portfolio/8lab-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/8lab-mobile.jpg    1x,
+                        ./photo/portfolio/8lab-mobile-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./photo/portfolio/8lab-mobile.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
                   <p class="projects__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -319,12 +479,32 @@
               </li>
               <li class="projects__item">
                 <div class="projects__wrap">
-                  <img
-                    src="./photo/photo9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./photo/portfolio/9growing.jpg    1x,
+                        ./photo/portfolio/9growing-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/9growing-tablet.jpg    1x,
+                        ./photo/portfolio/9growing-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./photo/portfolio/9growing-mobile.jpg    1x,
+                        ./photo/portfolio/9growing-mobile-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./photo/portfolio/9growing-mobile.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
                   <p class="projects__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -342,7 +522,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="contact-war">
         <div class="container">
           <section>
@@ -433,7 +613,7 @@
           </section>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/menu.js"></script>
   </body>
