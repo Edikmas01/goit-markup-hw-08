@@ -12,9 +12,6 @@
     grid-auto-flow: column;
   }
 }
-.contact-war .wrap-logo {
-  margin-bottom: 20px;
-}
 
 .wrap-logo {
   @include desktop {
@@ -22,6 +19,15 @@
   }
 }
 /*- section1-*/
+.footer-logo {
+  text-align: center;
+  margin-bottom: 20px;
+
+  @include desktop {
+    text-align: start;
+  }
+}
+
 .logo {
   font-family: "Raleway";
   font-style: normal;
@@ -41,72 +47,68 @@
   letter-spacing: 0.03em;
 }
 
+.footer__address {
+  font-style: normal;
+}
 .сontact__list {
   padding: 0;
 }
-
-.сontact__item {
-  margin-right: 70px;
-}
-
-.сontact__address {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  margin-bottom: 9px;
-  transition: color 250ms linear;
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.сontact__email,
-.сontact__tel {
+.сontact__link {
   display: block;
   text-align: center;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:nth-child(1) {
+    color: #ffffff;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+
   @include desktop {
     text-align: start;
   }
 }
 
-.сontact__item {
-  margin-bottom: 9px;
-}
-/*- section2-*/
-
-.networks__list {
-  display: flex;
-  gap: 10px;
-  padding: 0;
-}
-
-.footer-title {
+.footer__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
   padding-top: 12px;
+
   @include desktop {
     text-align: start;
   }
+}
+
+// /*- section2-*/
+
+.footer__soc {
+  @include desktop {
+    margin-left: 84px;
+    margin-right: 93px;
+  }
+}
+
+.networks__list {
+  display: flex;
+  gap: 10px;
+  padding: 0;
 }
 
 .networks__link {
@@ -134,16 +136,9 @@
 .contact-war .container {
   display: flex;
 }
-.contact-war {
-  @include desktop {
-    margin-left: 84px;
-    margin-right: 93px;
-  }
-}
 
-/*- section3-*/
-
-.form {
+// /*- section3-*/
+.footer__subscribe {
   width: 100%;
 
   @include tablet {
@@ -155,7 +150,7 @@
   }
 }
 
-.form__form {
+.footer__form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -173,7 +168,7 @@
   }
 }
 
-.form__label {
+.footer__label {
   display: flex;
   flex-basis: 100%;
   max-width: 450px;
@@ -187,7 +182,7 @@
   }
 }
 
-.form__email {
+.footer__imput {
   width: 100%;
   height: 50px;
   font-weight: 400;
@@ -198,30 +193,27 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 16px;
-  // padding-left: 16px;
-  // margin-right: 12px;
   background-color: transparent;
   outline: none;
-  transition: border-color 250ms;
+  transition: border-color 250ms var(--cubic);
 
   &::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+
+  &:hover,
   &:focus {
     border-color: #ffffff;
   }
-  &:focus::placeholder {
-    color: #ffffff;
-  }
 }
 
-.form__btn {
+.footer__btn {
+  position: relative;
+  text-align: left;
   min-width: 200px;
   height: 50px;
   font-weight: 700;
@@ -238,12 +230,18 @@
   position: relative;
   text-align: left;
 }
-
-.form__icon {
-  margin-left: 10px;
-  fill: #ffffff;
+.footer__icon {
   position: absolute;
   right: 28px;
   top: 50%;
+  fill: #ffffff;
   transform: translateY(-50%);
 }
+// .form__icon {
+//   margin-left: 10px;
+//   fill: #ffffff;
+//   position: absolute;
+//   right: 28px;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
