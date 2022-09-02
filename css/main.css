@@ -332,7 +332,15 @@ body {
 }
 
 .header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .header__container {
@@ -348,7 +356,12 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-right: 93px;
+  margin-right: 88px;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo__span {
@@ -358,6 +371,10 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.navigation__list {
+  padding: 0;
 }
 
 .navigation__list {
@@ -412,7 +429,8 @@ body {
     flex-direction: column;
   }
 }
-.contact__list .connect__link {
+
+.connect__link {
   display: none;
   align-items: center;
   font-weight: 500;
@@ -423,20 +441,22 @@ body {
   transition: color 250ms linear;
 }
 @media screen and (min-width: 768px) {
-  .contact__list .connect__link {
+  .connect__link {
     display: inline-flex;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact__list .connect__link {
+  .connect__link {
     font-size: 14px;
     line-height: 1.1;
+    margin: 0;
   }
 }
-.contact__list .connect__link:hover {
+.connect__link:hover {
   color: var(--accent-color);
 }
-.contact__list .connect__link:focus {
+.connect__link:focus {
   color: var(--accent-color);
 }
 
@@ -521,8 +541,16 @@ body {
   outline: none;
 }
 
-.nav__mob-menu-item :not(:last-child) {
-  margin-bottom: 32px;
+.nav__mob-menu-list {
+  padding: 0;
+}
+
+.nav__mob-menu-item {
+  margin-top: 32px;
+}
+
+.nav__mob-menu-item:first-child {
+  margin-top: 0;
 }
 
 .nav__mob-menu-link {
@@ -536,6 +564,11 @@ body {
 .nav__mob-menu-link:focus, .nav__mob-menu-link:hover {
   color: var(--accent-color);
   outline: none;
+}
+
+.mob-contacts__list {
+  padding: 0;
+  margin-bottom: 63px;
 }
 
 .mob-contacts__item {
@@ -559,14 +592,14 @@ body {
   }
 }
 
-.menu-contacts__email {
+.mob-contacts__email {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
 }
-.menu-contacts__email:focus, .menu-contacts__email:hover {
+.mob-contacts__email:focus, .mob-contacts__email:hover {
   color: var(--accent-color);
   outline: none;
 }
@@ -574,6 +607,7 @@ body {
 .mob-soc__list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .mob-soc__item:not(:last-child) {
@@ -667,7 +701,6 @@ body {
   color: #ffffff;
   padding: 10px 24px;
   min-width: 200px;
-  margin-top: 40px;
   background: #2196f3;
   border: 0;
   border-radius: 4px;
@@ -675,6 +708,7 @@ body {
 
 .about {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .about {
@@ -719,11 +753,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-@media screen and (max-width: 767px) {
-  .wrapper__pre-title {
-    text-align: center;
-  }
+  color: #757575;
+  text-align: left;
 }
 
 .wrapper {
@@ -788,6 +819,8 @@ body {
 }
 
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
 }
 @media screen and (min-width: 768px) {
@@ -803,11 +836,14 @@ body {
   }
 }
 
-.title {
+.team__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
-  .title {
+  .team__title {
     margin-bottom: 50px;
   }
 }
@@ -909,6 +945,9 @@ body {
 }
 
 .client__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
@@ -1038,7 +1077,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1056,7 +1095,7 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .сontact__list .сontact__link:focus, .сontact__list .сontact__link:hover {
@@ -1070,6 +1109,20 @@ body {
 
 .сontact__item {
   margin-top: 10px;
+}
+
+.сontact__link-ader {
+  color: #ffffff;
+}
+
+.сontact__link {
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .сontact__link {
+    text-align: left;
+  }
 }
 
 /*2*/

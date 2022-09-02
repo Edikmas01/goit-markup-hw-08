@@ -1,6 +1,6 @@
 .about {
   padding-top: 60px;
-
+  padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
   }
@@ -39,9 +39,8 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
+  color: #757575;
+  text-align: left;
 }
 
 .wrapper {

@@ -57,7 +57,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -73,7 +73,7 @@
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
@@ -88,7 +88,17 @@
 .сontact__item {
   margin-top: 10px;
 }
+.сontact__link-ader {
+  color: #ffffff;
+}
 
+.сontact__link {
+  display: block;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 /*2*/
 
 .join {
