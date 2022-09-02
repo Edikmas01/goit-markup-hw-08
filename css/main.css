@@ -478,20 +478,20 @@ body {
   margin-right: 50px;
 }
 
-.menu__button-open {
+.menu-open {
   display: block;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .menu__button-open {
+  .menu-open {
     display: none;
   }
 }
 
 .mob-menu {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   width: 100vw;
   height: 100vh;
@@ -508,14 +508,15 @@ body {
   overflow: auto;
 }
 
-.menu__button-close {
+.menu-close {
   display: flex;
   margin-left: auto;
+  margin-top: 21px;
   padding: 0;
   border: none;
   background-color: transparent;
 }
-.menu__button-close:focus, .menu__button-close:hover {
+.menu-close:focus, .menu-close:hover {
   fill: var(--accent-color);
   outline: none;
 }
@@ -578,7 +579,7 @@ body {
 .mob-soc__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
-  padding-right: 10px;
+  padding-right: 6px;
 }
 
 .mob-soc__link {
