@@ -483,16 +483,12 @@
       </section>
     </main> 
     <footer class="footer">
-      <div class="contact-war">
-        <div class="container">
-          <section>
-            <div class="footer-logo">
-              <a href="" class="logo link"
+      <div class="footer__box container">
+        <div class="contact-war">
+              <a href="" class="f-logo link"
                 >Web<span class="logo__span logo__span--color-white"
                   >Studio</span
-                ></a
-              >
-            </div>
+                ></a>
             <address class="footer__address">
               <ul class="сontact__list list">
                 <li class="сontact__item">
@@ -511,69 +507,72 @@
                     >info@devstudio.com
                   </a>
                 </li>
-                <li>
+                <li class="сontact__item">
                   <a href="tel:+380961111111" class="сontact__link link">
                     +38 096 111 11 11</a
                   >
                 </li>
               </ul>
             </address>
-          </section>
+          </div>
 
-          <section class="footer__soc">
-            <p class="footer__title">приєднуйтесь</p>
-            <ul class="networks__list list">
-              <li class="networks__item">
-                <a href="" class="networks__link link">
-                  <svg class="networks__icon" width="20" height="20">
+          <div class="join">
+            <p class="join__title">приєднуйтесь</p>
+            <ul class="join-soc__list list">
+              <li class="join-soc__item">
+                <a href="" class="join-soc__link link">
+                  <svg class="join-soc__icon" width="20" height="20">
                     <use href="./photo/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="networks__item">
-                <a href="" class="networks__link link"
-                  ><svg class="networks__icon" width="20" height="20">
+              <li class="join-soc__item">
+                <a href="" class="join-soc__link link"
+                  ><svg class="join-soc__icon" width="20" height="20">
                     <use href="./photo/symbol-defs.svg#icon-twitter"></use></svg
                 ></a>
               </li>
-              <li class="networks__item">
-                <a href="" class="networks__link link"
-                  ><svg class="networks__icon" width="20" height="20">
+              <li class="join-soc__item">
+                <a href="" class="join-soc__link link"
+                  ><svg class="join-soc__icon" width="20" height="20">
                     <use
                       href="./photo/symbol-defs.svg#icon-facebook"
                     ></use></svg
                 ></a>
               </li>
-              <li class="networks__item">
-                <a href="" class="networks__link link"
-                  ><svg class="networks__icon" width="20" height="20">
+              <li class="join-soc__item">
+                <a href="" class="join-soc__link link"
+                  ><svg class="join-soc__icon" width="20" height="20">
                     <use
                       href="./photo/symbol-defs.svg#icon-linkedin"
-                    ></use></svg
-                ></a>
+                    ></use>
+                  </svg>
+                  </a>
               </li>
             </ul>
-          </section>
-          <section class="footer__subscribe">
-            <p class="footer__title">Підпишіться на розсилку</p>
-            <form class="footer__form" autocomplete="off">
-              <label class="footer__label">
-                <input
+          </div>
+
+          <div class="subscribe">
+            <form>
+              <label for="email" class="subscribe__label">Підпишіться на розсилку</label>
+                <span class="subscribe__wrapper" >
+                  <input
+                  class="subscribe__imput"
                   type="email"
-                  name="footer-email"
-                  class="footer__imput"
+                  value=""
+                  name="email"
+                  id="email"
                   placeholder="E-mail"
-                  required
                 />
-              </label>
-              <button type="submit" class="footer__btn">
+              <button type="submit" class="subscribe__btn">
                 <span>Підписатися</span>
-                <svg class="footer__icon" width="24" height="24">
+                <svg class="subscribe__icon" width="24" height="24">
                   <use href="./photo/symbol-defs.svg#icon-send"></use>
                 </svg>
               </button>
+                </span>
             </form>
-          </section>
+          </div>>
         </div>
       </div>
     </footer>
