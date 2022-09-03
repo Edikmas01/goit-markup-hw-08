@@ -1,9 +1,11 @@
-@import "./utils/mixins";
 @import "./utils/vars";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+
 @import "./base/reset";
 @import "./base/common";
-@import "./utils/visually-hidden";
 
+@import "./components/mob-menu";
 @import "./components/conteiner";
 @import "./components/section";
 @import "./components/title";
@@ -12,10 +14,11 @@
 @import "./components/logo__span";
 
 @import "./layout/header";
-@import "./layout/mob-menu";
 @import "./layout/hero";
 @import "./layout/adout";
 @import "./layout/gallery";
 @import "./layout/team";
 @import "./layout/client";
 @import "./layout/footer";
+@import "./layout/button";
+@import "./layout/projects";
