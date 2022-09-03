@@ -67,6 +67,9 @@
     align-items: flex-start;
   }
 }
+.сontact__link-ader {
+  color: #ffffff;
+}
 
 .сontact__list .сontact__link {
   font-weight: 500;
@@ -88,13 +91,11 @@
 .сontact__item {
   margin-top: 10px;
 }
-.сontact__link-ader {
-  color: #ffffff;
-}
 
 .сontact__link {
   display: block;
   text-align: center;
+  margin-top: 9px;
   @media screen and (min-width: 1200px) {
     text-align: left;
   }

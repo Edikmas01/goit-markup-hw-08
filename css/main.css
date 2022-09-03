@@ -221,8 +221,14 @@ body {
 
 /* outline: 2px solid red;*/
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title {
@@ -842,9 +848,14 @@ body {
   line-height: 1.178;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .team__title {
     margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -953,6 +964,11 @@ body {
 @media screen and (min-width: 1200px) {
   .client__title {
     margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -1090,6 +1106,10 @@ body {
   }
 }
 
+.сontact__link-ader {
+  color: #ffffff;
+}
+
 .сontact__list .сontact__link {
   font-weight: 500;
   font-size: 14px;
@@ -1111,13 +1131,10 @@ body {
   margin-top: 10px;
 }
 
-.сontact__link-ader {
-  color: #ffffff;
-}
-
 .сontact__link {
   display: block;
   text-align: center;
+  margin-top: 9px;
 }
 @media screen and (min-width: 1200px) {
   .сontact__link {
