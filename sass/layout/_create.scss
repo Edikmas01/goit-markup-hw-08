@@ -1,0 +1,38 @@
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+.project-title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+  padding-left: auto;
+}
+
+.project-pre-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #487996;
+  margin-top: 10px;
+}
+
+.project-item {
+  flex-basis: calc(50% - 20);
+  text-align: center;
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+}
+
+.position {
+  margin: auto;
+}
