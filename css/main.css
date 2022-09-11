@@ -734,6 +734,18 @@ body {
   color: #487996;
   padding-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .examples-title {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples-title {
+    font-size: 48px;
+    line-height: 1.25;
+  }
+}
 
 .examples-pre-title {
   font-weight: 400;

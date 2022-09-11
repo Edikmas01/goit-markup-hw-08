@@ -17,6 +17,14 @@
   line-height: 1.25;
   color: #487996;
   padding-left: auto;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    line-height: 1.25;
+  }
 }
 
 .examples-pre-title {
